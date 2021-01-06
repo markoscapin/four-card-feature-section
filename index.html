@@ -5,41 +5,96 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Four card feature section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Four card feature section</title>
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- FONT FROM GOOGLE -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
 
-  Supervisor
-  Monitors activity to identify project roadblocks
+  <div class="main-container">
 
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+    <!-- info-container with all infos about the page -->
+      <div class="info-container">
+        <!-- THIS IS THE TITLE  -->
+        <h1 id="main-title" class="strong-font">Reliable, efficient delivery</h1>
+        <h1 class="strong-font">Powered by Technology</h1>
+        <h4>Our Artificial Intelligence powered tools use millions of project data <br> points
+        to ensure that your project is successful</h4>
 
-  Karma
-  Regularly evaluates our talent to ensure quality
+      </div>
 
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+      <!-- flex-container contains all 3 containers   -->
+      <div class="flex-container">
 
-  
+        <!-- to center the 1st and 4th box I need to make a div for them too so
+      the structure will be:
+        1- left-CONTAINER
+        2- middle-CONTAINER
+        3- right-CONTAINER
+
+     -->
+        <!-- LEFT CONTAINER -->
+        <div class="left-flex-container flex-boxes">
+          <div id="supervisor-box" class="section-container">
+            <!-- 1ST BOX -->
+              <h3 class="strong-font">Supervisor</h3>
+              <h5>Monitors activity to identify project roadblocks</h5>
+              <img class="icon" src="images/icon-supervisor.svg" alt="supervisor-img">
+          </div>
+        </div>
+
+        <!-- MIDDLE CONTAINER -->
+        <div class="middle-flex-container">
+
+          <div id="teambuiler-box" class="section-container">
+            <!-- 2ND BOX  -->
+              <h3 class="strong-font">Team Builder</h3>
+              <h5>Scans our talent network to create the optimal team for your project</h5>
+              <img class="icon" src="images/icon-team-builder.svg" alt="team-builder-img">
+          </div>
+
+          <div id="karma-box" class="section-container">
+            <!-- 3TH BOX  -->
+              <h3 class="strong-font">Karma</h3>
+              <h5>Regularly evaluates our talent to ensure quality</h5>
+              <img class="icon" src="images/icon-karma.svg" alt="karmar-img">
+          </div>
+        </div>
+
+          <!-- RIGHT CONTAINER -->
+        <div class="right-flex-container flex-boxes">
+          <div id="calculator-box" class="section-container">
+            <!-- 4TH BOX  -->
+              <h3 class="strong-font">Calculator</h3>
+              <h5>Uses data from past projects to provide better delivery estimates</h5>
+              <img class="icon" src="images/icon-calculator.svg" alt="calculator-img">
+          </div>
+        </div>
+      </div>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+      </p>
+  </div>
+
+
+<!-- TODO:
+1- fix the box-shadow
+2-
+
+
+
+
+ -->
+
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+
   </footer>
 </body>
 </html>

@@ -1,0 +1,141 @@
+
+/* TAG */
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  background-color: hsl(0, 0%, 98%);
+}
+
+h5, h4 {
+  font-weight: 200;
+  color: hsl(229, 6%, 66%);
+}
+
+h1 ,h3 {
+  margin:0;
+}
+
+h5 {
+  margin: 10px auto;
+}
+
+/* CLASS */
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+.flex-boxes {
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.info-container {
+  text-align: center;
+}
+
+.left-flex-container {margin-right: 0.5vw;}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.middle-flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.right-flex-container {margin-left: 0.5vw;}
+
+.section-container {
+  background-color: #FFFFFF;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 30px;
+  width: 18vw;
+  height: 13vw;
+  margin: 0.7vw;
+  position: relative;
+  overflow: hidden;
+}
+
+/* create a little coloured rectangular */
+.section-container::before {
+  content: '';
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.strong-font {color:hsl(234, 12%, 34%); }
+
+
+
+/* IDs */
+
+#calculator-box::before {background-color: hsl(212, 86%, 64%)}
+
+#main-title {font-weight: 200;}
+
+#karma-box::before {background-color: hsl(34, 97%, 64%);}
+
+#supervisor-box::before {background-color: hsl(180, 62%, 55%)}
+
+#teambuiler-box::before {background-color: hsl(0, 78%, 62%);}
+
+
+
+/* mobile version */
+@media only screen and (max-width: 600px) {
+    /* tags */
+    body {margin:8%;}
+    /* CLASSES */
+
+    .flex-container {
+      flex-direction: column;
+    }
+
+    .left-flex-container {margin-right: auto; width:100%;}
+
+    .main-container {position: relative; margin-top: 30%;}
+
+    .middle-flex-container {
+      margin: auto;
+      display: contents;
+    }
+
+    .right-flex-container {margin-left: auto;}
+
+    .section-container {
+      min-width: 18vw;
+      min-height: 40vw;
+      width: auto;
+      height: auto;
+      margin: 20px auto;
+    }
+  /* IDs */
+
+
+
+}
